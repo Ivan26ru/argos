@@ -80,6 +80,7 @@ b {
 
 .header__menu-ul {
     display: flex;
+    list-style: none;
 }
 
 .header__menu-ul > li:not(:first-child) {
@@ -139,7 +140,7 @@ b {
 
 .top__services-item {
     line-height: 40px;
-    padding-left: 40px;
+    padding-left: 50px;
     background: url("../img/icon_car.png") no-repeat center left / 40px auto;
 }
 
@@ -351,13 +352,13 @@ b {
 
 .footer__text {
     font-size: 16px;
-    line-height: 1.2;
     font-weight: 400;
+    line-height: 1.2;
 }
 
 .footer__title {
-    text-transform: uppercase;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .footer__text p:not(:first-child) {
