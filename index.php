@@ -9,8 +9,8 @@
 					<p class="top__services-item top__services-item_time">В максимально сжатые сроки</p>
 				</div>
 
-				<p class="top__title">Оптовые поставки <br>химической продукции</p>
-				<p class="top__title-small">в промышленной отрасли</p>
+				<p class="top__title"><?php echo get_field('top_title', 'options'); ?></p>
+				<p class="top__title-small"><?php echo get_field('top_subtitle', 'options'); ?></p>
 			</div>
 		</div>
 	</div>
@@ -18,11 +18,8 @@
 	<div class="about block">
 		<div class="wrap">
 			<div class="about__wrap">
-				<p class="title">О компании</p>
-				<div class="about__content">
-					<p>Компания «Аргос» является поставщиком химической продукции, организует импорт и экспорт поставок по России и странам СНГ.</p>
-					<p>Мы работаем со всеми видами промышленной химии. Поставки осуществляются с оптового склада в Москве. Вся продукция - от производителя.</p>
-				</div>
+				<p class="title"><?php echo get_field('about_title', 'options'); ?></p>
+				<div class="about__content"><?php echo get_field('about_text', 'options'); ?></div>
 			</div>
 		</div>
 	</div>
@@ -30,17 +27,22 @@
 	<div class="privilege block block__dark">
 		<div class="wrap">
 			<div class="privilege__wrap">
-				<p class="title">Наши преимущества</p>
+				<p class="title"><?php echo get_field('privilege_title', 'options'); ?></p>
 				<div class="privilege__gallery gallery">
-					<?php for ($i = 1; $i <= 4; $i++) { ?>
-						<div class="gallery__item">
+					<?php
+					if (have_rows('privilege_gallery', 'options')):
+						while (have_rows('privilege_gallery', 'options')) : the_row();
+							$text = get_sub_field('text');
+							$img = wp_get_attachment_image_url(get_sub_field("img"), 'thumbnail');
+							?>
+							<div class="gallery__item">
 							<div class="gallery__item-img">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/gal_<?php echo $i ?>.png" alt="">
+								<img src="<?php echo $img; ?>" alt="<?php echo $text ?>">
 							</div>
-							<p class="gallery__label">Соблюдение сроков</p>
-						</div>
-						<?php
-					} ?>
+							<p class="gallery__label"><?php echo $text; ?></p>
+							</div><?php
+						endwhile;
+					endif; ?>
 				</div>
 			</div>
 		</div>

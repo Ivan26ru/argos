@@ -191,7 +191,7 @@ b {
 
 .gallery__item {
     flex: 0 0 auto;
-    width: 160px;
+    width: 180px;
     text-align: center;
     outline: 1px solid red;
 }
