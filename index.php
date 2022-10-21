@@ -51,17 +51,25 @@
 	<div class="products block">
 		<div class="wrap">
 			<div class="products__wrap">
-				<p class="title">Продукция</p>
+				<p class="title"><?php echo get_field('products_title', 'options'); ?></p>
 				<div class="products__content">
 					<div class="tiles">
-						<?php for ($i = 1; $i < 9; $i++) { ?>
-							<div class="tiles__item">
-								<div class="tiles__img">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tiles/tile_1.png" alt="">
+
+						<?php
+						if (have_rows('privilege_gallery', 'options')):
+							while (have_rows('privilege_gallery', 'options')) : the_row();
+								$text = get_sub_field('text');
+								$img = wp_get_attachment_image_url(get_sub_field("img"), 'thumbnail');
+								?>
+								<div class="tiles__item">
+								<div class="tiles__img-img">
+									<img src="<?php echo $img; ?>" alt="<?php echo $text ?>">
 								</div>
-								<p class="tiles__text">Органические растворители</p>
-							</div>
-						<?php } ?>
+								<p class="tiles__text"><?php echo $text; ?></p>
+								</div><?php
+							endwhile;
+						endif; ?>
+
 					</div>
 
 					<div class="products__label-btn">Ознакомиться с полным ассортиментом нашей продукции можно, скачав PDF-файл.</div>
