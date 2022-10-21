@@ -1,5 +1,15 @@
 <?php
 
+require_once 'inc/helpers.php';
+
+if (function_exists('acf_add_options_page')) {
+	acf_add_options_page(array(
+		'page_title' => 'Настройки темы',
+		'menu_slug'  => 'theme_setting',
+		'icon_url'   => 'dashicons-editor-spellcheck',
+	));
+}
+
 
 register_nav_menus(
 	array(
