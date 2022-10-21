@@ -48,11 +48,11 @@
 				?>
 			</div>
 			<div class="header__contacts">
-				<a href="tel:+7 (111) 111-11-11" class="header__phone">+7 (111) 111-11-11</a>
-				<a href="mailto:info@argos.com.ru" class="header__mail">info@argos.com.ru</a>
+				<a href="tel:<?php echo phone_format(get_field('phone', 'options')); ?>" class="header__phone"><?php echo get_field('phone', 'options'); ?></a>
+				<a href="mailto:<?php echo get_field('email', 'options'); ?>" class="header__mail"><?php echo get_field('email', 'options'); ?></a>
 			</div>
 
-			<a href="#" class="header__btn my-btn my-btn__white">ПЕРЕЗВОНИТЕ МНЕ</a>
+			<a href="#" class="header__btn my-btn my-btn__white <?php echo get_field('popup_callback', 'options'); ?>">ПЕРЕЗВОНИТЕ МНЕ</a>
 		</div>
 	</div>
 </header>
