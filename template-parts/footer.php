@@ -26,7 +26,7 @@
 
 			<div class="footer__right">
 				<div class="footer__text">
-					<p class="footer__title">связаться с нами<</p>
+					<p class="footer__title">связаться с нами</p>
 
 					<p><a href="#">+7 (111) 111-11-11</a></p>
 
@@ -39,5 +39,4 @@
 </footer>
 
 <?php wp_footer(); ?>
-</body>
-</html>
+</body></html>

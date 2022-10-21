@@ -2,6 +2,7 @@
     --my-blue: rgba(17, 59, 124, 1);
     --my-blue-ligth: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #113B7C;
     --my-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --my-fz-1: 22px;
 }
 
 * {
@@ -183,7 +184,7 @@ b {
 }
 
 .about__content {
-    font-size: 22px;
+    font-size: var(--my-fz-1);
     line-height: 1.2;
     max-width: 570px;
     margin-top: 45px;
@@ -194,7 +195,7 @@ b {
 }
 
 .about {
-    background: url("../img/bg_about.png") no-repeat center right / contain;
+    background: url("../img/bg_about.png") no-repeat center right -100px /  auto 100%;
 }
 
 .gallery {
@@ -224,7 +225,7 @@ b {
 }
 
 .gallery__label {
-    font-size: 22px;
+    font-size: var(--my-fz-1);
     font-weight: 400;
     line-height: 1.1;
     height: 50px;
@@ -269,7 +270,7 @@ b {
 }
 
 .tiles__text {
-    font-size: 22px;
+    font-size: var(--my-fz-1);
     font-weight: 700;
     line-height: 1.2;
     position: absolute;
@@ -283,7 +284,7 @@ b {
 }
 
 .products__label-btn {
-    font-size: 22px;
+    font-size: var(--my-fz-1);
     font-weight: 400;
     line-height: 1.2;
     max-width: 570px;
@@ -366,7 +367,7 @@ b {
 }
 
 .questions__text {
-    font-size: 22px;
+    font-size: var(--my-fz-1);
     line-height: 1.2;
     margin-top: 12px;
 }
@@ -388,7 +389,7 @@ b {
 }
 
 .seo__text {
-    font-size: 22px;
+    font-size: var(--my-fz-1);
     font-weight: 400;
     line-height: 1.2;
     margin-top: 20px;

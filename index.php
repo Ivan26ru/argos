@@ -85,7 +85,9 @@
 				<div class="questions__left">
 					<p class="questions__title title"><?php echo get_field('questions_title', 'options'); ?></p>
 					<p class="questions__text"><?php echo get_field('questions_text', 'options'); ?></p>
-					<a href="tel:<?php echo phone_format(get_field('phone', 'options')); ?>" class="questions__tel"><?php echo get_field('phone', 'options'); ?></a>
+					<div class="questions__wrap-tel">
+						<a href="tel:<?php echo phone_format(get_field('phone', 'options')); ?>" class="questions__tel"><?php echo get_field('phone', 'options'); ?></a>
+					</div>
 				</div>
 
 				<div class="questions__right">

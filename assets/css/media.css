@@ -1,49 +1,164 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width: 1200px) {
+    :root {
+        --my-fz-1: 18px;
+    }
 
+    .wrap {
+        width: calc(100% / 1 - 40px);
+    }
+
+    .title {
+        font-size: var(--my-fz-1);
+    }
+
+    .top__services {
+        flex-wrap: wrap;
+    }
+
+    .top__services-item:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .top__title {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .top__wrap {
+        height: auto;
+
+    }
+
+    .block {
+        padding: 20px 0;
+    }
+
+    .about {
+        background: none;
+    }
+
+    .privilege__gallery {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .gallery__label {
+        margin-top: 10px;
+    }
+
+    .gallery__item {
+        margin-top: 20px;
+    }
+
+    .products__content {
+        margin-top: 10px;
+    }
+
+    .products__label-btn {
+        margin-top: 10px;
+    }
+
+    .tiles {
+        justify-content: space-around;
+    }
+
+    .tiles__item {
+        width: calc(100% / 3 - 10px);
+        min-width: 200px;
+        margin-top: 10px;
+    }
+
+    .tiles__text {
+    }
+
+    .questions__wrap {
+        flex-wrap: wrap;
+    }
+
+    .questions__right,
+    .questions__left {
+        flex-shrink: 1;
+        width: auto;
+    }
+
+    .questions__right {
+        margin-top: 20px;
+    }
+
+    .questions__tel {
+        font-size: var(--my-fz-1);
+        line-height: 1.3;
+        padding-left: 30px;
+        background-size: contain;
+    }
+
+    .questions__wrap-tel {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__wrap {
+        flex-wrap: wrap;
+    }
+
+    .footer__wrap > div {
+        flex-shrink: 1;
+        width: auto;
+        min-width: 200px;
+    }
+
+    .footer__right {
+        margin-top: 20px;
+    }
+
+    .footer {
+        background: var(--my-blue);
+    }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
 
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	
-	/*Disable Animation on Mobile Devices*/
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-	}
+@media only screen and (max-width: 768px) {
+
+    /*Disable Animation on Mobile Devices*/
+    .animated {
+        /*CSS transitions*/
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -o-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -o-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -moz-animation: none !important;
+        -ms-animation: none !important;
+        -o-animation: none !important;
+        -webkit-animation: none !important;
+        animation: none !important;
+    }
 
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width: 480px) {
 
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width: 320px) {
 
 }
 
@@ -51,26 +166,26 @@
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+@media only screen and (min-width: 320px) {
 
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+@media only screen and (min-width: 480px) {
 
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 768px) {
 
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width: 992px) {
 
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width: 1200px) {
 
 }
