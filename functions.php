@@ -1,4 +1,13 @@
 <?php
+
+
+register_nav_menus(
+	array(
+		'menu' => 'Меню',
+	)
+);
+
+
 add_action('wp_footer', 'add_scripts'); // приклеем ф-ю на добавление скриптов в футер
 if (!function_exists('add_scripts')) { // если ф-я уже есть в дочерней теме - нам не надо её определять
 	function add_scripts() { // добавление скриптов
