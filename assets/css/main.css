@@ -193,7 +193,7 @@ b {
     flex: 0 0 auto;
     width: 180px;
     text-align: center;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 .gallery__item-img {
