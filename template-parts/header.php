@@ -46,13 +46,6 @@
 						'depth'           => 1, // количество уровней вложенности
 				])
 				?>
-				<!--					<div class="header__menu-div">-->
-				<!--						<ul class="header__menu-ul">-->
-				<!--							<li><a href="#">Главная</a></li>-->
-				<!--							<li><a href="#">О компании</a></li>-->
-				<!--							<li><a href="#">Продукция</a></li>-->
-				<!--						</ul>-->
-				<!--					</div>-->
 			</div>
 			<div class="header__contacts">
 				<a href="tel:+7 (111) 111-11-11" class="header__phone">+7 (111) 111-11-11</a>
