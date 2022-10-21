@@ -56,13 +56,13 @@
 					<div class="tiles">
 
 						<?php
-						if (have_rows('privilege_gallery', 'options')):
-							while (have_rows('privilege_gallery', 'options')) : the_row();
+						if (have_rows('products_gallery', 'options')):
+							while (have_rows('products_gallery', 'options')) : the_row();
 								$text = get_sub_field('text');
-								$img = wp_get_attachment_image_url(get_sub_field("img"), 'thumbnail');
+								$img = wp_get_attachment_image_url(get_sub_field("img"), 'full');
 								?>
 								<div class="tiles__item">
-								<div class="tiles__img-img">
+								<div class="tiles__img">
 									<img src="<?php echo $img; ?>" alt="<?php echo $text ?>">
 								</div>
 								<p class="tiles__text"><?php echo $text; ?></p>
@@ -83,13 +83,13 @@
 		<div class="wrap">
 			<div class="questions__wrap">
 				<div class="questions__left">
-					<p class="questions__title title">Возникли вопросы?</p>
-					<p class="questions__text">Не нашли интересующую вас позицию в каталоге? Оставьте запрос, и мы вам поможем!</p>
-					<a href="#" class="questions__tel">+7 (495) 111-11-11</a>
+					<p class="questions__title title"><?php echo get_field('questions_title', 'options'); ?></p>
+					<p class="questions__text"><?php echo get_field('questions_text', 'options'); ?></p>
+					<a href="tel:<?php echo phone_format(get_field('phone', 'options')); ?>" class="questions__tel"><?php echo get_field('phone', 'options'); ?></a>
 				</div>
 
 				<div class="questions__right">
-					<form action="" style="outline: 1px solid red;height: 100px;"></form>
+					<?php echo do_shortcode('[contact-form-7 id="49" title="Обратная связь (feedback)"]'); ?>
 				</div>
 			</div>
 		</div>
