@@ -72,7 +72,7 @@
 
 					</div>
 
-					<div class="products__label-btn">Ознакомиться с полным ассортиментом нашей продукции можно, скачав PDF-файл.</div>
+					<div class="products__label-btn"><?php echo get_field('products_text', 'options'); ?></div>
 					<a href="<?php echo get_field('questions_file', 'options'); ?>" target="_blank" class="products__btn my-btn">скачать PDF</a>
 				</div>
 			</div>
