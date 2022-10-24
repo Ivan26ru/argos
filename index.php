@@ -1,6 +1,6 @@
 <?php get_template_part('template-parts/header') ?>
 
-	<div class="top block block__dark">
+	<div class="top block block__dark" id="top">
 		<div class="wrap">
 			<div class="top__wrap">
 				<div class="top__services">
@@ -15,7 +15,7 @@
 		</div>
 	</div>
 
-	<div class="about block">
+	<div class="about block" id="about">
 		<div class="wrap">
 			<div class="about__wrap">
 				<p class="title"><?php echo get_field('about_title', 'options'); ?></p>
@@ -48,7 +48,7 @@
 		</div>
 	</div>
 
-	<div class="products block">
+	<div class="products block" id="products">
 		<div class="wrap">
 			<div class="products__wrap">
 				<p class="title"><?php echo get_field('products_title', 'options'); ?></p>
