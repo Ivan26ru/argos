@@ -104,9 +104,9 @@ b {
 .header__phone,
 .header__mail {
     font-size: 20px;
-    line-height: 2;
+    line-height: 1.7;
     display: block;
-    padding-left: 30px;
+    padding-left: 40px;
     color: #ffffff;
     background: url("../img/icon_phone.png") no-repeat center left / auto 20px;
 }
@@ -121,8 +121,8 @@ b {
 }
 
 .header__mail {
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 19.5px;
+    font-weight: 100;
     background-image: url("../img/icon_message.png");
 }
 
