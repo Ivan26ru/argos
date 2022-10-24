@@ -28,10 +28,14 @@
 				<div class="footer__text">
 					<p class="footer__title">связаться с нами</p>
 
-					<p><a href="#">+7 (111) 111-11-11</a></p>
+					<p>
+						<a href="tel:<?php echo phone_format( get_field( 'phone', 'options' ) ); ?>"><?php echo get_field( 'phone', 'options' ); ?></a>
+					</p>
 
-					<p>info@argos.com.ru <br>
-						contact@argos.com.ru</p>
+					<p>
+						<a href="mailto:<?php echo get_field( 'email', 'options' ); ?>"><?php echo get_field( 'email', 'options' ); ?></a>
+						<br>
+						<a href="mailto:contact@argos.com.ru">contact@argos.com.ru</a></p>
 				</div>
 			</div>
 		</div>
