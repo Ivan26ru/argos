@@ -30,6 +30,8 @@
 
 					<p>
 						<a href="tel:<?php echo phone_format( get_field( 'phone', 'options' ) ); ?>"><?php echo get_field( 'phone', 'options' ); ?></a>
+						<br>
+						<a href="tel:<?php echo phone_format( get_field( 'phone2', 'options' ) ); ?>"><?php echo get_field( 'phone2', 'options' ); ?></a>
 					</p>
 
 					<p>

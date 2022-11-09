@@ -49,6 +49,7 @@
 			</div>
 			<div class="header__contacts">
 				<a href="tel:<?php echo phone_format(get_field('phone', 'options')); ?>" class="header__phone"><?php echo get_field('phone', 'options'); ?></a>
+				<a href="tel:<?php echo phone_format(get_field('phone2', 'options')); ?>" class="header__phone"><?php echo get_field('phone2', 'options'); ?></a>
 				<a href="mailto:<?php echo get_field('email', 'options'); ?>" class="header__mail"><?php echo get_field('email', 'options'); ?></a>
 			</div>
 
